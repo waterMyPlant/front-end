@@ -1,10 +1,11 @@
 import React from 'react';
 import './App.css';
+import CopyRight from './Components/signIn';
 
 function App() {
 	return (
 		<div className='App'>
-			<h1>WATER MY PLANTS</h1>
+			<CopyRight />
 		</div>
 	);
 }
