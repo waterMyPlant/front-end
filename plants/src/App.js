@@ -1,10 +1,16 @@
 import React from 'react';
 import './App.css';
+import SignIn from './Components/signIn';
+import SignUp from './Components/signUp';
+import Header from './Components/header';
+import { Route } from 'react-router-dom';
 
 function App() {
 	return (
 		<div className='App'>
-			<h1>WATER MY PLANTS</h1>
+			<Header />
+			<Route exact path='/signIn' component={SignIn} />
+			<Route exact path='/' component={SignUp} />
 		</div>
 	);
 }
