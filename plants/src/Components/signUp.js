@@ -44,7 +44,7 @@ const useStyles = makeStyles((theme) => ({
 	},
 }));
 
-export default function SignIn() {
+export default function SignUp() {
 	const classes = useStyles();
 
 	return (
@@ -53,9 +53,20 @@ export default function SignIn() {
 			<CssBaseline />
 			<div className={classes.paper}>
 				<Typography component='h1' variant='h5'>
-					Sign In
+					Create Account
 				</Typography>
 				<form className={classes.form} noValidate>
+					<TextField
+						variant='outlined'
+						margin='normal'
+						required
+						fullWidth
+						id='name'
+						label='Name'
+						name='name'
+						autoComplete='name'
+						autoFocus
+					/>
 					<TextField
 						variant='outlined'
 						margin='normal'
@@ -89,8 +100,8 @@ export default function SignIn() {
 							</Link>
 						</Grid>
 						<Grid item>
-							<Link href='/' variant='body2'>
-								{"Don't have an account? Sign Up"}
+							<Link href='/signIn' variant='body2'>
+								{'Already Have An Account? Sign in here!'}
 							</Link>
 						</Grid>
 					</Grid>

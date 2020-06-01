@@ -52,8 +52,9 @@ html {
    */
 
 body {
-	margin: 0;
-	background-color: #1e90ff;
+	height: 100vh;
+	background: url(/Images/hangingLeaves.jpg) no-repeat center center fixed;
+	background-size: cover;
 }
 
 /**
@@ -487,9 +488,8 @@ template {
 		transform: rotate(360deg);
 	}
 }
-.signIn {
-	height: 90vh;
-	background-image: url('hanging_leaves.jpg');
+.sign {
+	height: 100vh;
+	background: url(/images/hanging_leaves.jpg) no-repeat center center fixed;
 	background-size: cover;
-	background-position: center;
 }
