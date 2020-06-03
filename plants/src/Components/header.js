@@ -6,12 +6,12 @@ const Header = () => {
 	return (
 		<nav className='nav_bar'>
 			<a className='titlenav'>Plants</a>
-			<NavLink className='styledLink contact' to='/'>
+			{/* <NavLink className='styledLink contact' to='/'>
 				Sign Up
 			</NavLink>
 			<NavLink className='styledLink contact' to='/signIn'>
 				Sign In
-			</NavLink>
+			</NavLink> */}
 			<logOut />
 		</nav>
 	);

@@ -7,7 +7,7 @@ import { Route } from 'react-router-dom';
 
 function App() {
 	return (
-		<div className='App'>
+		<div className='container'>
 			<Header />
 			<Route exact path='/signIn' component={SignIn} />
 			<Route exact path='/' component={SignUp} />
