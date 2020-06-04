@@ -23,8 +23,8 @@ html {
    */
 
 body {
-	height: 100vh;
-	background: url(/Images/hangingLeaves.jpg) no-repeat center center fixed;
+	background-image: url('Images/hangingLeaves.jpg');
+	background-repeat: no-repeat;
 	background-size: cover;
 }
 
@@ -464,4 +464,16 @@ template {
 	text-align: center;
 	height: 100vh;
 	background-image: url('/hangingLeaves.jpg');
+}
+
+.sign {
+	background-color: white;
+	padding: 20px;
+	border-radius: 10px;
+	margin-top: 70px;
+}
+.nav_bar {
+	padding: 20px;
+	background-color: white;
+	font-size: 20px;
 }
