@@ -476,4 +476,15 @@ template {
 	padding: 20px;
 	background-color: white;
 	font-size: 20px;
+	display: flex;
+	justify-content: center;
+	justify-content: space-evenly;
+}
+.titleNav {
+	text-decoration: none;
+	color: black;
+	font-size: .8rem;
+}
+.plantFactsCont {
+	background-color: white;
 }

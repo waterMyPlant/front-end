@@ -3,6 +3,7 @@ import './App.css';
 import SignIn from './Components/signIn';
 import SignUp from './Components/signUp';
 import Header from './Components/header';
+import plantFacts from './Components/plantFacts';
 import { Route } from 'react-router-dom';
 
 function App() {
@@ -11,6 +12,7 @@ function App() {
 			<Header />
 			<Route exact path='/signIn' component={SignIn} />
 			<Route exact path='/' component={SignUp} />
+			<Route exact path='/facts' component={plantFacts} />
 		</div>
 	);
 }
