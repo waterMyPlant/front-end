@@ -2,6 +2,9 @@ import {
   START_FETCHING,
   FETCH_SUCCESS,
   FETCH_FAILURE,
+  START_LOGIN,
+  LOGIN_SUCCESS,
+  LOGIN_FAILURE,
   START_REGISTER,
   REGISTER_SUCCESS,
   REGISTER_FAILURE,
@@ -44,6 +47,30 @@ const reducer = (state = initialState, action) => {
       return {
         ...state,
         isRegistering: false,
+        error: true,
+        errorMsg: action.payload,
+      };
+    case START_LOGIN:
+      return {
+        ...state,
+        isLoggingIn: true,
+        error: false,
+        errorMsg: '',
+      };
+    case LOGIN_SUCCESS:
+      return {
+        ...state,
+        login: {
+          username: action.payload.username,
+        },
+        isLoggingIn: false,
+        error: false,
+        errorMsg: '',
+      };
+    case LOGIN_FAILURE:
+      return {
+        ...state,
+        isLoggingIn: false,
         error: true,
         errorMsg: action.payload,
       };
