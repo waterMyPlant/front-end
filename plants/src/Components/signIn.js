@@ -53,6 +53,7 @@ function SignIn(props) {
       username: '',
       password: '',
     });
+    props.history.push('/facts');
   };
 
   return (
