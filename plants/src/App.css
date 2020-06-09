@@ -23,9 +23,10 @@ html {
    */
 
 body {
-	background-image: url('Images/hangingLeaves.jpg');
+	margin: 0 auto;
+	/* background-image: url('Images/hangingLeaves.jpg');
 	background-repeat: no-repeat;
-	background-size: cover;
+	background-size: cover; */
 }
 
 /**
@@ -466,12 +467,6 @@ template {
 	background-image: url('/hangingLeaves.jpg');
 }
 
-.sign {
-	background-color: white;
-	padding: 20px;
-	border-radius: 10px;
-	margin-top: 70px;
-}
 .nav_bar {
 	padding: 20px;
 	background-color: white;
@@ -487,4 +482,27 @@ template {
 }
 .plantFactsCont {
 	background-color: white;
+}
+.signCont {
+	background-image: url('Images/hangingLeaves.jpg');
+	background-repeat: no-repeat;
+	background-size: cover;
+	display: flex;
+	align-items: center;
+	height: 100vh;
+}
+
+.sign {
+	background-color: white;
+	padding: 20px;
+	border-radius: 10px;
+}
+.grid-plant {
+	background-color: #b3c8b6;
+	display: grid;
+	grid-template-rows: 600px 400px;
+	grid-template-columns: 3fr 3fr;
+}
+img {
+	width: 20%;
 }

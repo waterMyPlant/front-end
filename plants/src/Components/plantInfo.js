@@ -11,7 +11,7 @@ const PlantInfo = (props) => {
 		return <h2>Loading Plants... </h2>;
 	}
 	return (
-		<div>
+		<div className='grid-plant'>
 			{props.error && <p>{props.error}</p>}
 			{props.Plants.map((plant) => <Plant key={plant.id} plant={plant} />)}
 		</div>
