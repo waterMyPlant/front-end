@@ -1,12 +1,12 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 
-const LogOut = () => {
+const logOut = () => {
 	return (
 		<Link className='log-out' to='/' onClick={() => localStorage.clear()}>
-			Sign Out
+			Logout
 		</Link>
 	);
 };
 
-export default LogOut;
+export default logOut;

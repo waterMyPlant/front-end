@@ -1,5 +1,6 @@
 import React from 'react';
 import { NavLink, Link } from 'react-router-dom';
+import logOut from '../Components/LogOut';
 
 const Header = () => {
 	return (
@@ -13,6 +14,7 @@ const Header = () => {
 			<Link className='titleNav' to='/plants'>
 				<h1>List of Plants</h1>
 			</Link>
+			<logOut />
 		</nav>
 	);
 };
