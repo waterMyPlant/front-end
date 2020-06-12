@@ -3,6 +3,7 @@ import { NavLink, Link } from 'react-router-dom';
 import LogOut from './logOut';
 
 const Header = () => {
+  let token = localStorage.getItem('token');
   return (
     <div className='header'>
       <nav className='nav_bar'>
@@ -15,7 +16,13 @@ const Header = () => {
         <Link className='titleNav' to='/plants'>
           <h1>List of Plants</h1>
         </Link>
-        <LogOut />
+        {token ? (
+          <LogOut />
+        ) : (
+          <Link className='titleNav' to='/signIn'>
+            <h1>Sign In</h1>
+          </Link>
+        )}
       </nav>
     </div>
   );
