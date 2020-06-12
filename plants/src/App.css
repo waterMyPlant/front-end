@@ -469,15 +469,16 @@ template {
 
 .nav_bar {
 	padding: 20px;
-	background-color: white;
 	font-size: 20px;
 	display: flex;
 	justify-content: center;
 	justify-content: space-evenly;
+	background-image: url('Images/header2.png');
+	color: white;
 }
 .titleNav {
 	text-decoration: none;
-	color: black;
+	color: white;
 	font-size: .8rem;
 }
 .plantFactsCont {
@@ -500,10 +501,20 @@ template {
 .grid-plant {
 	background-color: #b3c8b6;
 	display: grid;
-	grid-template-rows: 600px 400px;
-	grid-template-columns: 3fr 3fr;
+	grid-template-columns: repeat(auto-fill, minmax(500px, 1fr));
+	grid-gap: 1rem;
+	padding: 1rem;
 }
-img {
-	width: 40%;
+.img {
+	width: 60%;
 	height: 50%;
+}
+.plantCards {
+	width: 70%;
+}
+.titlePlant {
+	font-family: 'Sacramento', cursive;
+}
+.plantInformation {
+	font-family: 'Bellota', cursive;
 }

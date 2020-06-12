@@ -4,18 +4,20 @@ import logOut from '../Components/LogOut';
 
 const Header = () => {
 	return (
-		<nav className='nav_bar'>
-			<Link className='titleNav' to='/'>
-				<h1>Plants</h1>
-			</Link>
-			<Link className='titleNav' to='/facts'>
-				<h1>List of Facts</h1>
-			</Link>
-			<Link className='titleNav' to='/plants'>
-				<h1>List of Plants</h1>
-			</Link>
-			<logOut />
-		</nav>
+		<div className='header'>
+			<nav className='nav_bar'>
+				<Link className='titleNav' to='/'>
+					<h1>Home</h1>
+				</Link>
+				<Link className='titleNav' to='/facts'>
+					<h1>List of Facts</h1>
+				</Link>
+				<Link className='titleNav' to='/plants'>
+					<h1>List of Plants</h1>
+				</Link>
+				<logOut />
+			</nav>
+		</div>
 	);
 };
 
