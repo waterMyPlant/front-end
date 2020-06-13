@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import { useHistory } from 'react-router-dom';
 import Avatar from '@material-ui/core/Avatar';
 import Button from '@material-ui/core/Button';
 import CssBaseline from '@material-ui/core/CssBaseline';
@@ -34,8 +35,9 @@ const useStyles = makeStyles((theme) => ({
   },
 }));
 
-function SignIn(props) {
+function SignIn(props, tools) {
   const classes = useStyles();
+  let history = useHistory();
 
   const [user, setUser] = useState({
     username: '',
@@ -47,13 +49,14 @@ function SignIn(props) {
   };
 
   const handleSubmit = (event) => {
+    console.log('SIGN IN:', props);
     event.preventDefault();
     props.loginUser(user);
     setUser({
       username: '',
       password: '',
     });
-    props.history.push('/plants');
+    history.push('/plants');
   };
 
   return (
