@@ -2,6 +2,7 @@ import React, { useEffect } from 'react';
 import { connect } from 'react-redux';
 import Plant from './plants.js';
 import { fetchPlants } from '../actions';
+import Header from '../Components/header';
 
 const PlantInfo = (props) => {
 	useEffect(() => {
@@ -11,9 +12,12 @@ const PlantInfo = (props) => {
 		return <h2>Loading Plants... </h2>;
 	}
 	return (
-		<div className='grid-plant'>
-			{props.error && <p>{props.error}</p>}
-			{props.Plants.map((plant) => <Plant key={plant.id} plant={plant} />)}
+		<div>
+			<Header />
+			<div className='grid-plant'>
+				{props.error && <p>{props.error}</p>}
+				{props.Plants.map((plant) => <Plant key={plant.id} plant={plant} />)}
+			</div>
 		</div>
 	);
 };
