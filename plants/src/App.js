@@ -11,10 +11,11 @@ import plantInfo from './Components/plantInfo';
 function App(props) {
 	return (
 		<div className='container'>
+			<Header />
 			<Route exact path='/signIn' component={SignIn} />
 			<Route exact path='/' component={SignUp} />
 			<PrivateRoute exact path='/facts' component={plantFacts} />
-			<Route exact path='/plants' component={plantInfo} />
+			<PrivateRoute exact path='/plants' component={plantInfo} />
 		</div>
 	);
 }
