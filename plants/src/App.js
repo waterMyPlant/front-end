@@ -15,7 +15,7 @@ function App(props) {
 			<Route exact path='/signIn' component={SignIn} />
 			<Route exact path='/' component={SignUp} />
 			<PrivateRoute exact path='/facts' component={plantFacts} />
-			<PrivateRoute exact path='/plants' component={plantInfo} />
+			<Route exact path='/plants' component={plantInfo} />
 		</div>
 	);
 }
