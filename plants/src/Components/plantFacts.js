@@ -7,6 +7,7 @@ function plantFacts() {
 		<div className='plantFactsCont'>
 			<Header />
 			<h1>Plant Facts</h1>
+			<p>Some facts about plants</p>
 		</div>
 	);
 }
