@@ -31,7 +31,7 @@ export const loginUser = (user, isLoggingIn) => (dispatch) => {
 		.then((res) => {
 			dispatch({ type: LOGIN_SUCCESS, payload: res.data });
 			localStorage.setItem('token', res.data.token);
-			if (isLoggingIn != undefined) {
+			if (isLoggingIn !== undefined) {
 				isLoggingIn(false);
 			}
 		})
