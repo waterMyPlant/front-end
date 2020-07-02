@@ -529,14 +529,7 @@ template {
 	font-family: 'Bellota', cursive;
 }
 .prghFacts {
-	background-color: #b3c8b6;
-	color: black;
-	margin-top: 10px;
-	padding: 20px;
-	border-radius: 10px;
-	width: 70%;
-	text-align: center;
 	display: flex;
-	align-items: center;
-	flex-direction: column;
+	justify-content: center;
+	padding-top: 30px;
 }
