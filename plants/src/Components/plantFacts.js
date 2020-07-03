@@ -61,7 +61,7 @@ export default function plantFacts() {
 								<p>
 									Stick your finger about an inch deep into any plant, when you take your finger out if a lot of dirt
 									sticks to your finger DO NOT WATER YOUR PLANT... BUT if you stick your finger in and there's not much
-									dirt sticking to your finger and it feels dry then it's time to water your plant.
+									dirt sticking to your finger and it feels dry then it is time to water your plant.
 								</p>
 							</AccordionItemPanel>
 						</AccordionItem>
