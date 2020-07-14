@@ -95,7 +95,7 @@ export default function plantFacts() {
 							<AccordionItemPanel>
 								<p>
 									If your plants roots are coiling around themselves that means it's time to repot. When repotting make
-									sure not to use moist soil, you can end up overwatering your plant by accident.
+									sure not to use moist soil, you can end up overwatering your plant by accident!
 								</p>
 							</AccordionItemPanel>
 						</AccordionItem>
