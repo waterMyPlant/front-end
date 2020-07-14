@@ -93,7 +93,10 @@ export default function plantFacts() {
 								<AccordionItemButton>How do I know my plant needs to be repotted?</AccordionItemButton>
 							</AccordionItemHeading>
 							<AccordionItemPanel>
-								<p>If your plants roots are coiling around themselves that means it's time to repot!</p>
+								<p>
+									If your plants roots are coiling around themselves that means it's time to repot. When repotting make
+									sure not to use moist soil, you can end up overwatering your plant by accident.
+								</p>
 							</AccordionItemPanel>
 						</AccordionItem>
 					</Accordion>
